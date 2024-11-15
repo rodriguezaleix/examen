@@ -17,4 +17,9 @@ public class Main {
             System.out.print("Elige una opción: ");
             int opcion = sc.nextInt();
             sc.nextLine(); // Limpiar buffer
+            if (opcion == 1) {
+                // Opción 1: Iniciar control de asistencia
+                System.out.print("Introduce el número de alumnos (máximo 20): ");
+                numAlumnos = sc.nextInt();
+                sc.nextLine(); // Limpiar buffer
 
