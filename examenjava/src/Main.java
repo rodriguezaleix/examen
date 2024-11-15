@@ -22,4 +22,8 @@ public class Main {
                 System.out.print("Introduce el número de alumnos (máximo 20): ");
                 numAlumnos = sc.nextInt();
                 sc.nextLine(); // Limpiar buffer
+                if (numAlumnos > 20 || numAlumnos <= 0) {
+                    System.out.println("Número no válido. Debe ser entre 1 y 20.");
+                    continue; // Volver al menú
+                }
 
