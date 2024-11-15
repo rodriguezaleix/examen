@@ -61,7 +61,18 @@ public class Main {
                     System.out.println("Primero debes iniciar el control de asistencia.");
                     continue; // Volver al menú
                 }
-            
+                boolean encontrado = false; // Variable para verificar si hay alumnos con menos del 80%
+                System.out.println("Alumnos con menos de un 80% de asistencia:");
+
+                for (int i = 0; i < numAlumnos; i++) {
+                    int asistencias = 0;
+                    for (int j = 0; j < numDias; j++) {
+                        if (asistencia[i][j] == 'P') {
+                            asistencias++;
+                        }
+                    }
+
+
 
 
 
