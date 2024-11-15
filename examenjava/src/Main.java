@@ -40,5 +40,17 @@ public class Main {
                     System.out.print("Alumno " + (i + 1) + ": ");
                     alumnos[i] = sc.nextLine();
                 }
+                System.out.println("Registra la asistencia ('P' para presente, 'A' para ausente):");
+                for (int i = 0; i < numAlumnos; i++) {
+                    System.out.println("Alumno: " + alumnos[i]);
+                    for (int j = 0; j < numDias; j++) {
+                        System.out.print("Día " + (j + 1) + ": ");
+                        asistencia[i][j] = sc.nextLine().charAt(0);
 
+                        if (asistencia[i][j] != 'P' && asistencia[i][j] != 'A') {
+                            System.out.println("Entrada no válida. Usa 'P' o 'A'.");
+                            j--; // Repetir entrada para este día
+                        }
+                    }
+                }
 
