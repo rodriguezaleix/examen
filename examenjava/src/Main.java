@@ -82,7 +82,16 @@ public class Main {
                     System.out.println("Cap alumne té menys d'un 80% d'assistencia.");
                 }
 
+            } else if (opcion == 3) {
+                // Salir del programa
+                System.out.println("Saliendo del programa. ¡Hasta luego!");
+                break;
 
-
-
-
+            } else {
+                // Opción no válida
+                System.out.println("Opción no válida. Intenta de nuevo.");
+            }
+        }
+            sc.close();
+    }
+    }
