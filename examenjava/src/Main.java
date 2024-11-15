@@ -26,4 +26,19 @@ public class Main {
                     System.out.println("Número no válido. Debe ser entre 1 y 20.");
                     continue; // Volver al menú
                 }
+                System.out.print("Introduce el número de días (máximo 10): ");
+                numDias = sc.nextInt();
+                sc.nextLine();
+
+                if (numDias > 10 || numDias <= 0) {
+                    System.out.println("Número no válido. Debe ser entre 1 y 10.");
+                    continue; // Volver al menú
+                }
+
+                System.out.println("Introduce los nombres de los alumnos:");
+                for (int i = 0; i < numAlumnos; i++) {
+                    System.out.print("Alumno " + (i + 1) + ": ");
+                    alumnos[i] = sc.nextLine();
+                }
+
 
