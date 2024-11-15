@@ -53,4 +53,15 @@ public class Main {
                         }
                     }
                 }
+                System.out.println("Asistencia registrada correctamente.");
+
+            } else if (opcion == 2) {
+                // Opción 2: Listar alumnos con menos del 80% de asistencia
+                if (numAlumnos == 0 || numDias == 0) {
+                    System.out.println("Primero debes iniciar el control de asistencia.");
+                    continue; // Volver al menú
+                }
+            
+
+
 
