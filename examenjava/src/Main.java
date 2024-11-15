@@ -71,6 +71,16 @@ public class Main {
                             asistencias++;
                         }
                     }
+                    // Si el porcentaje de asistencias es menor al 80%, lo mostramos
+                    if (asistencias < numDias * 0.8) {
+                        System.out.println(alumnos[i]);
+                        encontrado = true; // Al menos un alumno con menos del 80%
+                    }
+                }
+
+                if (!encontrado) {
+                    System.out.println("Cap alumne té menys d'un 80% d'assistencia.");
+                }
 
 
 
